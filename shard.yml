@@ -1,0 +1,17 @@
+name: deployer
+version: 0.1.0
+
+authors:
+  - z81 <muzo0@yandex.ru>
+
+targets:
+  deployer:
+    main: src/deployer.cr
+
+dependencies:
+  router:
+    github: tbrand/router.cr
+
+crystal: 0.29.0
+
+license: MIT
