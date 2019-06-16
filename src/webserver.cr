@@ -38,7 +38,7 @@ class WebServer
   def run(port)
     puts "Listening on http://0.0.0.0:#{port}"
     server = HTTP::Server.new(route_handler)
-    server.bind_tcp port
+    server.bind_tcp "0.0.0.0", port
     server.listen
   end
 end
